@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/auth/authmiddleware.ts","./src/routes/cartrouter.ts","./src/routes/itemroutes.ts","./src/types/usertypes.ts","./src/zodschemas/user.ts"],"version":"5.9.2"}

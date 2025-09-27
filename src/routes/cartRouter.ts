@@ -2,7 +2,7 @@ import express, { type Request, type Response } from "express";
 import { PrismaClient } from "@prisma/client";
 import type { AuthRequest } from "../types/userTypes.ts";
 import Stripe from "stripe";
-const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY || "sk_test_51SBrcTRpo1ZvanQlc2ceVXfiwCdHJgGEyLFI7ddJVJKIR5dG52kWk1KD7SQxSUMVD0liBDvd9p53Uv6Tb0ZBu4XP006PoVHtOE";
+const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY || "";
 const cartrouter = express.Router();
 const prisma = new PrismaClient();
 const stripe = new Stripe(STRIPE_SECRET_KEY, {
